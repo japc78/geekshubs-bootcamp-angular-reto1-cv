@@ -1,4 +1,6 @@
 /* Reset =================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -50,5 +52,281 @@ a {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  margin-bottom: 3rem;
+}
+
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+html {
+  background: white;
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.5em;
+  color: #1a1a1a;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* HACK: Esconder de IE/Mac \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clear {
+  clear: both;
+}
+
+hr {
+  display: none;
+  border: 0;
+  line-height: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+  cursor: pointer;
+  -webkit-transition: color .3s, ease-in-out;
+  transition: color .3s, ease-in-out;
+  border-bottom: .1rem solid;
+}
+
+a:hover {
+  color: #7f00ff;
+  border-color: #7f00ff;
+}
+
+a.link {
+  font-weight: normal;
+}
+
+p br {
+  line-height: 3em;
+}
+
+*:focus {
+  outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+}
+
+h1,
+.h1 {
+  margin-bottom: 0.1875em;
+  font-size: 3em;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 300;
+  color: #7f00ff;
+}
+
+h2,
+.h2 {
+  margin-bottom: 0.1875em;
+  font-size: 2em;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h3,
+.h3 {
+  margin-bottom: 1em;
+  font-size: 1.6empx;
+  font-size: 0.16emrem;
+  line-height: 1.3;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h4,
+.h4 {
+  margin-bottom: 1.5em;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 1.5em;
+}
+
+h6,
+.h6 {
+  margin-bottom: 1.5em;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p,
+ol,
+ul,
+dl,
+input,
+select,
+textarea,
+address {
+  font-family: inherit;
+  margin-bottom: 1.5em;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+small {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+p small br {
+  line-height: 1.2em;
+}
+
+p small {
+  line-height: 1.2em;
+  display: block;
+}
+
+p br {
+  line-height: 3em;
+}
+
+p b, p strong {
+  font-weight: bold;
+  color: #7f00ff;
+}
+
+body {
+  padding: 70px 0;
+  min-width: 320px;
+}
+
+.menu {
+  position: fixed;
+  z-index: 9;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+}
+
+.menu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-color: #e6e6e6;
+}
+
+.menu > ul > li {
+  width: calc( 100%/3);
+}
+
+.menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 70px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  text-align: center;
+}
+
+.menu i {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.menu span {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1em;
+  padding-top: 5px;
 }
 /*# sourceMappingURL=styles.css.map */

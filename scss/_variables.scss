@@ -1,0 +1,76 @@
+
+// Fonts
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+// Colors
+  // Black and grey scale
+    $black 			    : rgb(0,0,0);
+    $darkenGrey 	  : lighten($black, 10%);
+    $darkGrey 	  	: lighten($black, 25%);
+    $grey 			    : lighten($black, 50%);
+    $lightGrey 		  : lighten($black, 80%);
+    $lighterGrey 	  : lighten($black, 90%);
+    $white 			    : rgb(255,255,255);
+
+  // General Colors
+    $color1 			      : #7f00ff;
+    $color1dark 		    : darken($color1,5);
+    $color1darken       : darken($color1,20);
+    $color1light 	 	    : lighten($color1,5);
+    $color1lighter 	 	  : lighten($color1,10);
+
+    $color2 			      : #255893;
+    $color2dark 		    : darken($color1,5);
+    $color2darken       : darken($color1,20);
+    $color2light 	 	    : lighten($color1,5);
+    $color2lighter 	 	  : lighten($color1,10);
+
+// General
+  $bodyColor 		: $white;
+  $textColor 		: $darkenGrey;
+  $textBold     : $color1;
+  $baseColor 		: $color1;
+  $borderColor 	: lighten($baseColor, 60%);
+
+  $enlaceColor: $color2;
+  $enlaceColorHover: $color1;
+  $enlaceColorLink: $color1darken;
+
+
+
+// Tipografía y texto general
+  $baseFont : 'Open Sans', sans-serif;
+  $condensedFont: 'Open Sans Condensed', sans-serif;;
+  $baseFontSize : 16;
+  $baseLineHeight : 1.5em;
+  $baseFontWeight: normal;
+
+// Títulos h1, h2, h3, h4, h5, h6
+  $h1FontWeight: 300;
+  $h1FontStyle: normal;
+  $h1FontSize: 3em;
+  $h1FontColor: $color1;
+  $h2FontWeight: bold;
+  $h2FontStyle: normal;
+  $h2FontSize: 2em;
+  $h3FontWeight: bold;
+  $h3FontStyle: normal;
+  $h3FontSize: 1.6em;
+  $h4FontWeight: bold;
+  $h4FontStyle: normal;
+  $h4FontSize: 1.4em;
+  $h5FontWeight: bold;
+  $h5FontStyle: normal;
+  $h5FontSize: 1.2em;
+  $h6FontWeight: bold;
+  $h6FontStyle: normal;
+  $h6FontSize: 1em;
+
+// Margenes
+  $generalMargin:1.5rem;
+  $generalMarginBottom:3rem;
+  $generalPadding:1.5rem;
+
+// Grid
+  $gridGab: generalPadding;

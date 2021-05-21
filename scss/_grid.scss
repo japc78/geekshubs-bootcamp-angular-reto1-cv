@@ -1,0 +1,41 @@
+.container {
+	width: 100%;
+  padding: 0 $generalPadding*2;
+}
+
+.row {
+	display:grid;
+	justify-self: center;
+	align-content: start;
+	margin-bottom:$generalMarginBottom;
+}
+
+@mixin col1 {
+	grid-template-columns: repeat(1fr);
+	gap: 0;
+}
+
+@mixin col2 {
+	grid-template-columns: repeat(2,1fr);
+	gap: $gridGad;
+}
+
+@mixin col3 {
+	grid-template-columns: repeat(3,1fr);
+	gap: $gridGad;
+}
+
+@mixin col4 {
+	grid-template-columns: repeat(4,1fr);
+	gap: $gridGad;
+}
+
+@mixin col5 {
+	grid-template-columns: repeat(5,1fr);
+	gap: $gridGad;
+}
+
+@mixin col6 {
+	grid-template-columns: repeat(6,1fr);
+	gap: $gridGad;
+}
