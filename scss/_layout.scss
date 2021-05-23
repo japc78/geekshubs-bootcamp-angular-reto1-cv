@@ -1,6 +1,6 @@
 body {
   padding: 70px 0;
-  min-width: 320px;
+  min-width: 360px;
 }
 
 .home {
@@ -18,7 +18,6 @@ body {
 }
 
 .contact {
-
   form {
     background-color: $lighterGrey;
     padding: $generalPadding * 2;
@@ -42,6 +41,49 @@ body {
   }
 }
 
-.row {
-  @include col1;
+.card {
+  font-family: $condensedFont;
+  margin-bottom: $generalMarginBottom;
+  .details {
+    background-color: $lighterGrey;
+    padding: $generalPadding;
+    font-size: .9em;
+
+    margin-bottom: $generalMargin;
+
+    span:nth-child(2)::before {
+      content: "- ";
+    }
+
+    ul {
+      font-size: inherit;
+      margin-bottom: 0;
+    }
+
+    li:first-child {
+      text-transform: uppercase;
+    }
+  }
+
+  .info {
+    font-family: $condensedFont;
+    p {margin-bottom: $generalMargin / 2;}
+    h5{
+      font-family:$condensedFont;
+      margin-bottom: $generalMargin / 2;
+      font-weight: normal;
+    }
+    ul {
+      padding-left: $generalPadding;
+      li {
+        margin-bottom: $generalMargin / 2;
+        list-style: "- ";
+      }
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
+

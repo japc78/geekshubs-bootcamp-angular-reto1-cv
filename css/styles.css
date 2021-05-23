@@ -444,7 +444,7 @@ p b, p strong {
 
 body {
   padding: 70px 0;
-  min-width: 320px;
+  min-width: 360px;
 }
 
 .home header {
@@ -485,10 +485,56 @@ body {
   margin-right: 0.75rem;
 }
 
-.row {
-  -ms-grid-columns: ()[1fr];
-      grid-template-columns: repeat(1fr);
-  gap: 0;
+.card {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-bottom: 3rem;
+}
+
+.card .details {
+  background-color: #f2f2f2;
+  padding: 1.5rem;
+  font-size: .9em;
+  margin-bottom: 1.5rem;
+}
+
+.card .details span:nth-child(2)::before {
+  content: "- ";
+}
+
+.card .details ul {
+  font-size: inherit;
+  margin-bottom: 0;
+}
+
+.card .details li:first-child {
+  text-transform: uppercase;
+}
+
+.card .info {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.card .info p {
+  margin-bottom: 0.75rem;
+}
+
+.card .info h5 {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-bottom: 0.75rem;
+  font-weight: normal;
+}
+
+.card .info ul {
+  padding-left: 1.5rem;
+}
+
+.card .info ul li {
+  margin-bottom: 0.75rem;
+  list-style: "- ";
+}
+
+.card:last-child {
+  margin-bottom: 0;
 }
 
 .menu {
