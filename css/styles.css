@@ -157,6 +157,21 @@ a.link {
   font-weight: normal;
 }
 
+.image {
+  overflow: hidden;
+  margin: 0;
+  line-height: 0;
+}
+
+.image a {
+  line-height: 0;
+  display: block;
+}
+
+.image img {
+  width: 100%;
+}
+
 p br {
   line-height: 3em;
 }
@@ -179,8 +194,8 @@ h6 {
 
 h1,
 .h1 {
-  margin-bottom: 0.1875em;
-  font-size: 3em;
+  margin-bottom: 0.375em;
+  font-size: 4em;
   line-height: 1.2;
   font-style: normal;
   font-weight: 300;
@@ -189,7 +204,7 @@ h1,
 
 h2,
 .h2 {
-  margin-bottom: 0.1875em;
+  margin-bottom: 0.375em;
   font-size: 2em;
   line-height: 1.2;
   font-style: normal;
@@ -272,6 +287,18 @@ p b, p strong {
 body {
   padding: 70px 0;
   min-width: 320px;
+}
+
+.home header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.home .image {
+  border-radius: 100%;
+  border: 1px solid lightgrey;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .menu {

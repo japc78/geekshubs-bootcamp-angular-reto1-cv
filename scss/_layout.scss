@@ -2,3 +2,19 @@ body {
   padding: 70px 0;
   min-width: 320px;
 }
+
+.home {
+  header {
+    text-align: center;
+    margin-bottom: $generalMarginBottom;
+  }
+
+  .image {
+    @include rounded(100%);
+    border: 1px solid lightgrey;
+    max-width: 200px;
+    margin:0 auto;
+  }
+}
+
+

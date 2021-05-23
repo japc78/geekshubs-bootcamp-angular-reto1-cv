@@ -65,6 +65,22 @@ a {
     }
 }
 
+.image {
+    overflow:hidden;
+    margin:0;
+    line-height: 0;
+
+    a {
+        line-height: 0;
+        display:block;
+    }
+
+    img {
+        width:100%;
+    }
+}
+
 p br {line-height:$baseLineHeight*2;}
 
 *:focus {outline: 0;}
+
