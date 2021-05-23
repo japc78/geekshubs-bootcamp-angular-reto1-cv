@@ -1,0 +1,106 @@
+// CSS3 Toggle Radio And Checkbox
+// https://css3toggleradiocheckbox.blogspot.com/
+
+.mk-trc {
+  label {
+    height: inherit;
+    display: block;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  i{
+    float: left;
+    width: 55px;
+    height: 25px;
+    margin-right: 5px;
+    font-style: normal;
+    position: relative;
+    background: $grey;
+    background: rgba($black,.3);
+
+    &:before,
+    &:after {
+        content:'';
+        position: absolute;
+    }
+
+    &:before{
+      top: 2px;
+      left: 2px;
+      z-index: 1;
+      width: 21px;
+      height: 21px;
+      background: $lighterGrey;
+      transition: all .2s ease-in-out 0s;
+    }
+  }
+
+  input:checked + label i{
+    background:$color1;
+
+    &:before{
+      left:32px;
+    }
+  }
+
+  &[data-text="true"] i:after,
+  &[data-text="true"] i:after{
+    left:22px;
+    color: $lighterGrey;
+    height:25px;
+    content:'Off';
+    padding:0 4px;
+    font-size:13px;
+    font-weight:bold;
+    line-height:25px;
+    text-transform:uppercase;
+    color:rgba($white,.9);
+    transition:all .2s ease-in-out 0s;
+  }
+
+  &.yes-no[data-text="true"] i:after,
+  &.yes-no[data-text="true"] i:after{
+    content:'No';
+  }
+
+  &.yes-no[data-text="true"] input:checked + label i:after{
+    left:8px;
+    content:'Si';
+    letter-spacing: 1px;
+  }
+
+  &[data-radius="true"] i{
+    border-radius:25px;
+    &:before{
+      border-radius:inherit;
+    }
+  }
+
+  & i[data-before-check]:before,
+  & i[data-before-check]:after,
+  & i[data-after-check]:before,
+  & i[data-after-check]:after{
+    border:none;
+  }
+
+  & i[data-before-check]:before{
+    color:$grey;
+    font-size:16px;
+    line-height:20px;
+    text-align:center;
+    -webkit-transform:rotate(0);
+    -ms-transform:rotate(0);
+    transform:rotate(0);
+    font-family: FontAwesome;
+    content:attr(data-before-check);
+  }
+
+  input:checked + label i[data-after-check]:before{
+    color:$white;
+    background:rgba($black,.1);
+    content:attr(data-after-check);
+  }
+}
