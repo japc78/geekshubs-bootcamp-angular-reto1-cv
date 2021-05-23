@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+  <title>Juan Antonio Pavón Carmona - Full Stack Developer</title>
+  <script src="https://kit.fontawesome.com/2df5f50a42.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i><span>ABOUT</span></a>
+        </li>
+        <li>
+          <a href="about.html"><i class="fas fa-file-invoice"></i><span>CV</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html"><i class="fas fa-comment-dots"></i><span>CONTACT</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="container contact">
+      <div class="row">
+        <header>
+          <h1>Contact</h1>
+        </header>
+        <div class="row">
+          <div class="col">
+            <ul>
+              <li>
+                <a mailto="japc.dev@gmail.com?subject=hola!"><i class="fas fa-at"></i><span>japc.dev@gmail.com</span></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/japcdev"><i class="fab fa-linkedin-in"></i><span>linkedin.com/in/japcdev</span></a>
+              </li>
+              <li>
+                <a href="https://github.com/japc78"><i class="fab fa-github"></i><span>github.com/japc78</span></a>
+              </li>
+              <li>
+                <a href="skype:japc@outlook.com?userinfo"><i class="fab fa-skype"></i><span>japc@outlook.com</span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h2>Formulario de contacto</h2>
+            <form action="" method="post">
+              <div class="item">
+                <div>
+                  <label for="txtNombre" title="Escribe tu nombre">Nombre <small>(Obligatorio)</small></label>
+                  <input id="txtNombre" name="txtNombre" class="box" required="required" type="text" title="Escribe tu nombre" value="" placeholder="Escribe tu nombre" />
+                </div>
+                <div>
+                  <label for="txtCorreo" title="Escribe tu e-mail">E-mail <small>(Obligatorio)</small></label>
+                  <input id="txtCorreo" name="txtCorreo" class="box" required="required" type="email" title="Escribe tu e-mail" value="" placeholder="Escribe tu e-mail" />
+                </div>
+                <div>
+                  <label for="txtTelefono" title="Escribe tu teléfono">Teléfono</label>
+                  <input id="txtTelefono" name="txtTelefono" class="box" type="tel" title="Teléfono" value="" placeholder="Escribe tu teléfono" />
+                </div>
+              </div>
+              <div class="item">
+                <label class="label" for="txtConsulta" title="Escribe tu consulta">Motivo</label>
+                <textarea id="txtConsulta" name="txtConsulta" class="box" required="required" cols="70" rows="2" title="Escribe tu motivo de contacto" placeholder="Escribe tu motivo de contacto"></textarea>
+              </div>
+              <div class="accept item">
+                <div class="mk-trc yes-no" data-text="true" data-radius="true">
+                  <p>
+                    <input id="chkAceptar" type="checkbox" title="Marcar para aceptar la política de privacidad" />
+                    <label class="lblAceptar" for="chkAceptar"><i data-before-check="" data-after-check=""></i>Acepto la <a class="link" href="politica-de-privacidad.html" title="Política de privacidad" rel="external" target="_blank">Política de privacidad</a></label>
+                  </p>
+                  <p>
+                    <small>De acuerdo con lo establecido por el Nuevo Reglamento
+                      Europeo de Protección de Datos 679/2016 del 26 de Mayo
+                      de 2016 (RGPD), el cliente/usuario queda informado y
+                      presta su consentimiento al tratamiento de sus datos del
+                      que soy responsable con la finalidad de
+                      informarle sobre los productos y servicios solicitados,
+                      así como el envío de comunicaciones comerciales sobre
+                      los mismos. Asimismo, le informamos de la posibilidad de
+                      ejercer los derechos de transparencia, acceso,
+                      rectificación, información, supresión, limitación del
+                      tratamiento, portabilidad y oposición de sus datos en el
+                      email japc.dev@gmail.com. Le informo
+                      también que los datos personales suministrados no serán
+                      cedidos ni comunicados, ni siquiera para su
+                      conservación, a terceras personas.</small>
+                  </p>
+                </div>
+                <div id="submit">
+                  <input class="btn" type="submit" name="cmdEnviar" value="Enviar" id="cmdEnviar" title="Pulsar para enviar tu consulta" disabled="disabled" />
+                  <input class="btn" type="reset" name="borrar" value="Borrar" title="Pulsar para borrar el contenido del formulario" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
