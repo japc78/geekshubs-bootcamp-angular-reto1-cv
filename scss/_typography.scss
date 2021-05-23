@@ -27,6 +27,8 @@ h2,
   line-height: 1.2;
   font-style: $h2FontStyle;
   font-weight: $h2FontWeight;
+  color: $h2FontColor;
+  text-transform: uppercase;
 }
 
 h3,

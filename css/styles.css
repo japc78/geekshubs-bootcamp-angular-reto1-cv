@@ -69,10 +69,6 @@ a {
   margin-bottom: 3rem;
 }
 
-.col {
-  width: 100%;
-}
-
 @-webkit-viewport {
   width: device-width;
 }

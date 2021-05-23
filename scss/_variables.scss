@@ -51,9 +51,10 @@
   $h1FontStyle: normal;
   $h1FontSize: 4em;
   $h1FontColor: $color1;
-  $h2FontWeight: bold;
+  $h2FontWeight: 300;
   $h2FontStyle: normal;
   $h2FontSize: 2em;
+  $h2FontColor: $color1;
   $h3FontWeight: bold;
   $h3FontStyle: normal;
   $h3FontSize: 1.6em;
@@ -74,3 +75,30 @@
 
 // Grid
   $gridGab: generalPadding;
+
+//Formularios
+  $boxBg:$white;
+  $boxBorderWidth: 1px;
+  $boxBorderStyle:solid;
+  $boxBorderColor: $lighterGrey;
+  $boxBorderRadius:0;
+  $boxTxtColor: $grey;
+
+//Botones
+  $btnTxtColor:$white;
+  $btnTxTSize: 12;
+  $btnBgColor: $color2;
+  $btnBorderSize:0;
+  $btnBorderRadius: 0;
+  $btnBorderColor: $btnTxtColor;
+
+  $btnTxtColorHover:$color2;
+  $btnBgColorHover: $color1;
+  $btnBorderColorHover: $btnBgColorHover;
+
+  $btnDisableTxtColor: $lightGrey;
+  $btnDisableBorderColor: $btnDisableTxtColor;
+  $btnDisableBgColor:transparent;
+
+  $btnBorderSizeSmall: 2px;
+  $btnSmallTxtSize: 10;
