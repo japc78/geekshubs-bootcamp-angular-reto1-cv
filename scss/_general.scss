@@ -116,7 +116,7 @@ p br {
     letter-spacing: 1px;
     position: relative;
     line-height: 1em;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     @if $btnBorderRadius > 0 {
       @include rounded($btnBorderRadius);

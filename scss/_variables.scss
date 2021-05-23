@@ -8,17 +8,17 @@
     $black 			    : rgb(0,0,0);
     $darkenGrey 	  : lighten($black, 10%);
     $darkGrey 	  	: lighten($black, 25%);
-    $grey 			    : lighten($black, 50%);
-    $lightGrey 		  : lighten($black, 80%);
-    $lighterGrey 	  : lighten($black, 90%);
+    $grey 			    : lighten($black, 60%);
+    $lightGrey 		  : lighten($black, 85%);
+    $lighterGrey 	  : lighten($black, 95%);
     $white 			    : rgb(255,255,255);
 
   // General Colors
     $color1 			      : #7f00ff;
     $color1dark 		    : darken($color1,5);
     $color1darken       : darken($color1,20);
-    $color1light 	 	    : lighten($color1,5);
-    $color1lighter 	 	  : lighten($color1,10);
+    $color1light 	 	    : lighten($color1,15);
+    $color1lighter 	 	  : lighten($color1,25);
 
     $color2 			      : #255893;
     $color2dark 		    : darken($color1,5);
@@ -87,18 +87,18 @@
 //Botones
   $btnTxtColor:$white;
   $btnTxTSize: 12;
-  $btnBgColor: $color2;
+  $btnBgColor: $color1light;
   $btnBorderSize:0;
   $btnBorderRadius: 0;
   $btnBorderColor: $btnTxtColor;
 
-  $btnTxtColorHover:$color2;
+  $btnTxtColorHover: $btnTxtColor;
   $btnBgColorHover: $color1;
   $btnBorderColorHover: $btnBgColorHover;
 
-  $btnDisableTxtColor: $lightGrey;
+  $btnDisableTxtColor: $grey;
   $btnDisableBorderColor: $btnDisableTxtColor;
-  $btnDisableBgColor:transparent;
+  $btnDisableBgColor: $lightGrey;
 
   $btnBorderSizeSmall: 2px;
   $btnSmallTxtSize: 10;

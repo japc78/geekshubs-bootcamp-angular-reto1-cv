@@ -183,7 +183,7 @@ p br {
 .btn {
   text-align: center;
   color: white;
-  background-color: #255893;
+  background-color: #a54dff;
   display: inline-block;
   padding: 10px 15px 9px;
   cursor: pointer;
@@ -195,8 +195,8 @@ p br {
   letter-spacing: 1px;
   position: relative;
   line-height: 1em;
-  -webkit-transition: all 0.3 ease-in-out;
-  transition: all 0.3 ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 0;
 }
 
@@ -210,13 +210,13 @@ p br {
 
 .btn:hover {
   background-color: #7f00ff;
-  color: #255893;
+  color: white;
 }
 
 .btn:disabled {
-  background: transparent;
+  background: #d9d9d9;
   cursor: default;
-  color: #cccccc;
+  color: #999999;
 }
 
 .btn i {
@@ -229,7 +229,7 @@ p br {
   background-color: white;
   border-width: 1px;
   border-style: solid;
-  border-color: #e6e6e6;
+  border-color: #f2f2f2;
   padding: 0.75rem 1.5rem;
 }
 
@@ -249,7 +249,7 @@ p br {
   margin-right: 5px;
   font-style: normal;
   position: relative;
-  background: gray;
+  background: #999999;
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -264,7 +264,7 @@ p br {
   z-index: 1;
   width: 21px;
   height: 21px;
-  background: #e6e6e6;
+  background: #f2f2f2;
   -webkit-transition: all .2s ease-in-out 0s;
   transition: all .2s ease-in-out 0s;
 }
@@ -280,7 +280,7 @@ p br {
 .mk-trc[data-text="true"] i:after,
 .mk-trc[data-text="true"] i:after {
   left: 22px;
-  color: #e6e6e6;
+  color: #f2f2f2;
   height: 25px;
   content: 'Off';
   padding: 0 4px;
@@ -320,7 +320,7 @@ p br {
 }
 
 .mk-trc i[data-before-check]:before {
-  color: gray;
+  color: #999999;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -459,6 +459,11 @@ body {
   margin: 0 auto;
 }
 
+.contact form {
+  background-color: #f2f2f2;
+  padding: 3rem;
+}
+
 .contact ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,7 +511,7 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
 }
 
 .menu > ul > li {
