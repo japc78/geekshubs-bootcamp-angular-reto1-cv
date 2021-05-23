@@ -17,4 +17,25 @@ body {
   }
 }
 
+.contact {
+  ul {
+    li {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: $generalMargin;
+      transition: all .3s ease-in-out;
+      &:hover {
+        color: $color1;
+      }
+    }
 
+    i {
+      @include font-size(24);
+      margin-right: $generalMargin/2;
+    }
+  }
+}
+
+.row {
+  @include col1;
+}
