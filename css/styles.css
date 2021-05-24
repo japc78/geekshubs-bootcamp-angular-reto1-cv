@@ -57,6 +57,7 @@ a {
 .container {
   width: 100%;
   padding: 0 3rem;
+  overflow: hidden;
 }
 
 .row {
@@ -346,16 +347,20 @@ h6 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizelegibility;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 h1,
 .h1 {
   margin-bottom: 0.375em;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 1.2;
   font-style: normal;
   font-weight: 300;
   color: #7f00ff;
+  text-transform: uppercase;
 }
 
 h2,
@@ -587,8 +592,10 @@ body {
 }
 
 .menu span {
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 11px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Open Sans Condensed", sans-serif;
   line-height: 1em;
   padding-top: 5px;
 }
