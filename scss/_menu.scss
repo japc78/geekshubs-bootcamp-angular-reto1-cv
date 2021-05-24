@@ -31,7 +31,9 @@
   }
 
   span {
-    @include font-size (12);
+    font-size: .8em;
+    font-weight: bold;
+    font-family: $condensedFont;
     line-height: 1em;
     padding-top: 5px;
   }

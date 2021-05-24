@@ -592,8 +592,7 @@ body {
 }
 
 .menu span {
-  font-size: 11px;
-  font-size: 1.1rem;
+  font-size: .8em;
   font-weight: bold;
   font-family: "Open Sans Condensed", sans-serif;
   line-height: 1em;
