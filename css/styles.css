@@ -55,6 +55,8 @@ a {
 }
 
 .container {
+  display: -ms-grid;
+  display: grid;
   width: 100%;
   padding: 0 3rem;
   overflow: hidden;
@@ -67,6 +69,10 @@ a {
       justify-self: center;
   -ms-flex-line-pack: start;
       align-content: start;
+  margin-bottom: 3rem;
+}
+
+.col {
   margin-bottom: 3rem;
 }
 
@@ -551,6 +557,85 @@ body {
   margin-bottom: 0;
 }
 
+.map {
+  padding: 3rem;
+  background-color: #f2f2f2;
+  margin-bottom: 3rem;
+}
+
+.map h3 {
+  margin-bottom: 0.75rem;
+}
+
+.map ul {
+  margin-bottom: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.map ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tech-list {
+  margin-bottom: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.tech-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.level {
+  font-size: .7em;
+  color: #999999;
+}
+
+.level.level1 i:nth-child(1) {
+  color: #7f00ff;
+}
+
+.level.level2 i:nth-child(1), .level.level2 i:nth-child(2) {
+  color: #7f00ff;
+}
+
+.level.level3 {
+  color: #7f00ff;
+}
+
+.level.level3 i:nth-child(4), .level.level3 i:nth-child(5) {
+  color: #999999;
+}
+
+.level.level4 {
+  color: #7f00ff;
+}
+
+.level.level4 i:nth-child(5) {
+  color: #999999;
+}
+
+.level.level5 {
+  color: #7f00ff;
+}
+
 .menu {
   position: fixed;
   z-index: 9;
@@ -606,5 +691,35 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
   line-height: 1em;
   padding-top: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .contact ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact ul li {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row {
+    max-width: 768px;
+  }
+  .skill-tech .row {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+    display: block;
+  }
+  .skill-tech .row .col {
+    display: inline-block;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,12 @@
+@mixin mediaqueries_600 {
+  .contact {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: 50%;
+      }
+    }
+  }
+}

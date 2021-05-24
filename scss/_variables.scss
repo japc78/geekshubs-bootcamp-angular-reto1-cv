@@ -74,7 +74,7 @@
   $generalPadding:1.5rem;
 
 // Grid
-  $gridGab: generalPadding;
+  $gridGap: $generalPadding*2;
 
 //Formularios
   $boxBg:$white;

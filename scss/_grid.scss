@@ -1,4 +1,5 @@
 .container {
+	display: grid;
 	width: 100%;
   padding: 0 $generalPadding*2;
 	overflow: hidden;
@@ -22,25 +23,25 @@
 
 @mixin col2 {
 	grid-template-columns: repeat(2,1fr);
-	gap: $gridGad;
+	gap: $gridGap;
 }
 
 @mixin col3 {
 	grid-template-columns: repeat(3,1fr);
-	gap: $gridGad;
+	gap: $gridGap;
 }
 
 @mixin col4 {
 	grid-template-columns: repeat(4,1fr);
-	gap: $gridGad;
+	gap: $gridGap;
 }
 
 @mixin col5 {
 	grid-template-columns: repeat(5,1fr);
-	gap: $gridGad;
+	gap: $gridGap;
 }
 
 @mixin col6 {
 	grid-template-columns: repeat(6,1fr);
-	gap: $gridGad;
+	gap: $gridGap;
 }
