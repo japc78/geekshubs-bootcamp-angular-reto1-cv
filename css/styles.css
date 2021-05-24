@@ -107,7 +107,7 @@ body {
   font-size: 1.6rem;
   font-weight: normal;
   line-height: 1.5em;
-  color: #1a1a1a;
+  color: #404040;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -142,7 +142,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: #1a1a1a;
+  color: #404040;
   cursor: pointer;
   -webkit-transition: color 0.3s, ease-in-out;
   transition: color 0.3s, ease-in-out;
@@ -502,6 +502,11 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.card .details .date {
+  font-weight: bold;
+  color: #7f00ff;
+}
+
 .card .details span:nth-child(2)::before {
   content: "- ";
 }
@@ -523,10 +528,9 @@ body {
   margin-bottom: 0.75rem;
 }
 
-.card .info h5 {
+.card .info h3 {
   font-family: "Open Sans Condensed", sans-serif;
   margin-bottom: 0.75rem;
-  font-weight: normal;
 }
 
 .card .info ul {
