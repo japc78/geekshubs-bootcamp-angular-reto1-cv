@@ -89,6 +89,11 @@ body {
     }
   }
 
+  .cert {
+    font-style: italic;
+    font-weight: bold;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }

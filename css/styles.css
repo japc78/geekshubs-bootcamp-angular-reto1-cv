@@ -542,6 +542,11 @@ body {
   list-style: "- ";
 }
 
+.card .cert {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .card:last-child {
   margin-bottom: 0;
 }
