@@ -99,3 +99,69 @@ body {
   }
 }
 
+.map {
+  padding: $generalPadding *2;
+  background-color: $lighterGrey;
+  margin-bottom: $generalMarginBottom;
+
+  h3 {
+    margin-bottom: $generalMargin/2;
+  }
+
+  ul {
+    margin-bottom: 0;
+    font-family: $condensedFont;
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.tech-list {
+  margin-bottom: 0;
+  font-family: $condensedFont;
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.level {
+  $color: $color1;
+
+  font-size: .7em;
+  color: $grey;
+
+  &.level1 {
+    i:nth-child(1) {
+      color: $color;
+    }
+  }
+
+  &.level2 {
+    i:nth-child(1), i:nth-child(2)  {
+      color: $color;
+    }
+  }
+
+  &.level3 {
+    color: $color;
+    i:nth-child(4), i:nth-child(5) {
+      color: $grey;
+    }
+  }
+
+  &.level4 {
+    color: $color;
+    i:nth-child(5) {
+      color: $grey;
+    }
+  }
+
+  &.level5 {
+    color: $color;
+  }
+}
