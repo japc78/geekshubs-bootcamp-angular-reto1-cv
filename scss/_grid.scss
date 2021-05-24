@@ -11,6 +11,10 @@
 	margin-bottom:$generalMarginBottom;
 }
 
+.col {
+	margin-bottom: $generalMarginBottom;
+}
+
 @mixin col1 {
 	grid-template-columns: repeat(1fr);
 	gap: 0;
