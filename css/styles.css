@@ -151,8 +151,8 @@ a {
   text-decoration: none;
   color: #404040;
   cursor: pointer;
-  -webkit-transition: color 0.3s, ease-in-out;
-  transition: color 0.3s, ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 a:hover {
@@ -743,7 +743,7 @@ footer {
 
 @media only screen and (min-width: 992px) {
   body {
-    padding: calc(3rem + 70px) 0 0;
+    padding: calc(3rem + 100px) 0 0;
   }
   .row {
     max-width: 992px;
@@ -752,12 +752,19 @@ footer {
     position: fixed;
     top: 0;
     bottom: initial;
+    height: 100px;
   }
   .menu > ul {
     margin: 0 auto;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 100%;
   }
   .menu > ul > li {
     max-width: 100px;
+  }
+  .menu > ul > li a {
+    height: 100%;
   }
   .menu span {
     font-size: 1em;
