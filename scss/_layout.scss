@@ -3,6 +3,13 @@ body {
   min-width: 360px;
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+  padding: $generalPadding;
+  color: $color1lighter;
+}
+
 .home {
   header {
     text-align: center;

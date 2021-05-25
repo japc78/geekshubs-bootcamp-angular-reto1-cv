@@ -459,6 +459,13 @@ body {
   min-width: 360px;
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+  color: #bf80ff;
+}
+
 .home header {
   text-align: center;
   margin-bottom: 3rem;
@@ -847,6 +854,16 @@ body {
   .skill-tech .row {
     -webkit-column-count: 3;
             column-count: 3;
+  }
+  footer {
+    background-color: rgba(242, 242, 242, 0.8);
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0.75rem;
+    position: fixed;
+    right: 0;
+    width: 120px;
   }
 }
 
