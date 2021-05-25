@@ -1,6 +1,28 @@
-@mixin mediaqueries_992 {
+@mixin mediaqueries_992($maxWith: 992px) {
+  body {
+    padding: calc(#{$generalMarginBottom} + 70px) 0 0;
+  }
+
   .row {
-    max-width: 992px;
+    max-width: $maxWith;
+  }
+
+  .menu {
+    position: fixed;
+    top:0;
+    bottom: initial;
+
+    > ul {
+      margin: 0 auto;
+
+      > li {
+        max-width: 100px;
+      }
+    }
+
+    span {
+      font-size: 1em;
+    }
   }
 
   .skill-tech .row {

@@ -1,9 +1,23 @@
-@mixin mediaqueries_1140 {
+@mixin mediaqueries_1140($maxWith: 1140px) {
   .row {
-    max-width: 1140px;
+    max-width: $maxWith;
   }
 
   .skill-tech .row {
     column-count: 4;
+  }
+
+  .menu {
+    > ul {
+      max-width: $maxWith;
+    }
+
+    li {
+      max-width: 150px;
+    }
+
+    span {
+      font-size: 1.2em;
+    }
   }
 }

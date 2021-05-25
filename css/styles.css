@@ -653,6 +653,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 70px;
+  background-color: #f2f2f2;
 }
 
 .menu > ul {
@@ -661,17 +662,15 @@ body {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  background-color: #f2f2f2;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
 }
 
 .menu > ul > li {
-  width: calc( 100%/3);
+  width: 100%;
 }
 
 .menu a {
@@ -686,8 +685,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 70px;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
   text-align: center;
 }
 
@@ -735,8 +732,25 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
+  body {
+    padding: calc(3rem + 70px) 0 0;
+  }
   .row {
     max-width: 992px;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    bottom: initial;
+  }
+  .menu > ul {
+    margin: 0 auto;
+  }
+  .menu > ul > li {
+    max-width: 100px;
+  }
+  .menu span {
+    font-size: 1em;
   }
   .skill-tech .row {
     -webkit-column-count: 3;
@@ -751,6 +765,15 @@ body {
   .skill-tech .row {
     -webkit-column-count: 4;
             column-count: 4;
+  }
+  .menu > ul {
+    max-width: 1140px;
+  }
+  .menu li {
+    max-width: 150px;
+  }
+  .menu span {
+    font-size: 1.2em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

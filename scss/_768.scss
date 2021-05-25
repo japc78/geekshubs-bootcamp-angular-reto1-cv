@@ -1,5 +1,5 @@
-@mixin mediaqueries_768 {
+@mixin mediaqueries_768($maxWith: 768px) {
   .row {
-    max-width: 768px;
+    max-width: $maxWith;
   }
 }
