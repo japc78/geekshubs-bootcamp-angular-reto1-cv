@@ -9,6 +9,8 @@ Este proyecto consta de dos ramas: main y develop.
 - **main** contiene los ficheros en producción.
 - **develop** es la rama de desarrollo y pruebas.
 
+Puedes ver el proyecto funcionando aquí: [https://japc78.github.io/geekshubs-bootcamp-angular-reto1-cv/](https://japc78.github.io/geekshubs-bootcamp-angular-reto1-cv/)
+
 ## Tecnologías y metodologías utilizadas 📋
 
 `HTML5`, `CSS3`, `SCSS`, `FlexBox`, `CSS Grid`, `Mobile first`,  `Responsive web design`
