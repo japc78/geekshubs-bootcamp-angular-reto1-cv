@@ -25,6 +25,19 @@
     }
   }
 
+  .home {
+    .text {
+      column-count: 2;
+      column-gap: $gridGap;
+      display: block;
+      orphans: 3;
+
+      p {
+        widows: 3
+      }
+    }
+  }
+
   .skill-tech .row {
     column-count: 3;
   }
