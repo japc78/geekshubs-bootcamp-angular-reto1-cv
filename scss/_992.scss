@@ -30,6 +30,11 @@
   }
 
   .home {
+    .image {
+      max-width: 300px;
+      height: 300px;
+    }
+
     .text {
       column-count: 2;
       column-gap: $gridGap;
