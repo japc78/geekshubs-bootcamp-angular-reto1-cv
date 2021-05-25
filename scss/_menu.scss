@@ -24,6 +24,9 @@
     min-height: 70px;
     // align-self: stretch;
     text-align: center;
+    &.active {
+      color: $color1;
+    }
   }
 
   i {

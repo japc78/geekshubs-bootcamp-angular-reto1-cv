@@ -20,7 +20,13 @@
 
       > li {
         max-width: 100px;
-        a {height: 100%;}
+        a {
+          height: 100%;
+          &:hover, &.active {
+            transform: scale(1.2);
+            transition: .1s ease-in-out;
+          }
+        }
       }
     }
 
