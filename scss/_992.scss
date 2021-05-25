@@ -38,6 +38,46 @@
     }
   }
 
+  .work-experience, .education .academy {
+    .card {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-areas:
+        "details header"
+        "details info"
+        ". info"
+        ". info";
+      column-gap: $gridGap;
+
+      > header {
+        grid-area: header;
+      }
+
+      .details {
+        grid-area: details;
+      }
+
+      .info {
+        grid-area: info;
+      }
+    }
+  }
+
+  .education .academy {
+    margin-bottom: $generalMarginBottom;
+  }
+
+  .education .other {
+    display: grid;
+    column-gap: $gridGap;
+    grid-template: 1fr / 1fr 1fr;
+
+    > header {
+      grid-column: 1 / span 2;
+    }
+  }
+
+
   .skill-tech .row {
     column-count: 3;
   }
