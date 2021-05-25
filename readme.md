@@ -45,7 +45,7 @@ Ese comando hace lo mismo que el anterior, pero el directorio de destino se llam
 
 ## Versiones 📌
 
-Uso [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+Uso [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/japc78/geekshubs-bootcamp-angular-reto1-cv/tags).
 
 ## Autor ✒️
 
