@@ -1,18 +1,19 @@
 .container {
-	display: grid;
 	width: 100%;
   padding: 0 $generalPadding*2;
 	overflow: hidden;
+	transition: all .3s ease-in-out;
 }
 
 .row {
 	display:grid;
 	justify-self: center;
 	align-content: start;
+	margin: 0 auto;
 	margin-bottom:$generalMarginBottom;
 }
 
-.col {
+.item {
 	margin-bottom: $generalMarginBottom;
 }
 
