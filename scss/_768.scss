@@ -2,15 +2,4 @@
   .row {
     max-width: 768px;
   }
-
-  .skill-tech .row {
-    column-count: 2;
-    column-gap: $gridGap;
-    display: block;
-
-    .col {
-      display: inline-block;
-      width: 100%;
-    }
-  }
 }

@@ -9,4 +9,15 @@
       }
     }
   }
+
+  .skill-tech .row {
+    column-count: 2;
+    column-gap: $gridGap;
+    display: block;
+
+    .item {
+      display: inline-block;
+      width: 100%;
+    }
+  }
 }

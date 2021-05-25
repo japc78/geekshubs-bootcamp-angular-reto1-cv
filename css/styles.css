@@ -55,11 +55,11 @@ a {
 }
 
 .container {
-  display: -ms-grid;
-  display: grid;
   width: 100%;
   padding: 0 3rem;
   overflow: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .row {
@@ -69,10 +69,11 @@ a {
       justify-self: center;
   -ms-flex-line-pack: start;
       align-content: start;
+  margin: 0 auto;
   margin-bottom: 3rem;
 }
 
-.col {
+.item {
   margin-bottom: 3rem;
 }
 
@@ -585,6 +586,10 @@ body {
           justify-content: space-between;
 }
 
+.skills h2 {
+  font-size: 1.6em;
+}
+
 .tech-list {
   margin-bottom: 0;
   font-family: "Open Sans Condensed", sans-serif;
@@ -604,6 +609,12 @@ body {
 }
 
 .level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 2px;
   font-size: .7em;
   color: #999999;
 }
@@ -704,22 +715,42 @@ body {
   .contact ul li {
     width: 50%;
   }
+  .skill-tech .row {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 4.5rem;
+            column-gap: 4.5rem;
+    display: block;
+  }
+  .skill-tech .row .item {
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .row {
     max-width: 768px;
   }
-  .skill-tech .row {
-    -webkit-column-count: 2;
-            column-count: 2;
-    -webkit-column-gap: 3rem;
-            column-gap: 3rem;
-    display: block;
+}
+
+@media only screen and (min-width: 992px) {
+  .row {
+    max-width: 992px;
   }
-  .skill-tech .row .col {
-    display: inline-block;
-    width: 100%;
+  .skill-tech .row {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .row {
+    max-width: 1140px;
+  }
+  .skill-tech .row {
+    -webkit-column-count: 4;
+            column-count: 4;
   }
 }
 /*# sourceMappingURL=styles.css.map */

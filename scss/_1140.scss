@@ -1,0 +1,9 @@
+@mixin mediaqueries_1140 {
+  .row {
+    max-width: 1140px;
+  }
+
+  .skill-tech .row {
+    column-count: 4;
+  }
+}

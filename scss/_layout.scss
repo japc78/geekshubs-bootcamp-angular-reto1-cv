@@ -119,9 +119,16 @@ body {
   }
 }
 
+.skills {
+  h2 {
+    font-size: 1.6em;
+  }
+}
+
 .tech-list {
   margin-bottom: 0;
   font-family: $condensedFont;
+
   li {
     display: flex;
     flex-direction: row;
@@ -131,6 +138,10 @@ body {
 
 .level {
   $color: $color1;
+
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
 
   font-size: .7em;
   color: $grey;
