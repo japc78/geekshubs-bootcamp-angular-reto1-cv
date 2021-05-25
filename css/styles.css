@@ -344,6 +344,38 @@ p br {
   content: attr(data-after-check);
 }
 
+@-webkit-keyframes preload {
+  0% {
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+  }
+  90% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@keyframes preload {
+  0% {
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+  }
+  90% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -457,6 +489,21 @@ p b, p strong {
 body {
   padding: 70px 0;
   min-width: 360px;
+}
+
+body:before {
+  content: "";
+  display: blocK;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: white;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-name: preload;
+          animation-name: preload;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 footer {

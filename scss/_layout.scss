@@ -1,6 +1,18 @@
 body {
   padding: 70px 0;
   min-width: 360px;
+
+  &:before {
+    content: "";
+    display: blocK;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    background: $white;
+    animation-duration: .8s;
+    animation-name: preload;
+    animation-timing-function: ease-in-out;
+  }
 }
 
 footer {
