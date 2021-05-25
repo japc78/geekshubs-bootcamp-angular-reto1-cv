@@ -77,6 +77,42 @@
     }
   }
 
+  .contact {
+    ul {
+      display: flex;
+      flex-wrap:nowrap;
+      justify-content: space-between;
+
+      li {width: auto;}
+    }
+
+    form {
+      display: grid;
+      @include col2;
+
+      .accept {
+        grid-column: span 2;
+      }
+
+      .item {
+        margin-bottom: 0;
+      }
+
+      .item:nth-child(1) {
+        div:last-child input {
+          margin-bottom: 0;
+        }
+      }
+
+      .item:nth-child(2) {
+        overflow: hidden;
+        textarea {
+          height: 100%;
+        }
+      }
+    }
+  }
+
 
   .skill-tech .row {
     column-count: 3;

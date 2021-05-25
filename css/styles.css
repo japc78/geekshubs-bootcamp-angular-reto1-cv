@@ -708,6 +708,9 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .contact ul li {
     width: 50%;
@@ -805,6 +808,41 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
+  }
+  .contact ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact ul li {
+    width: auto;
+  }
+  .contact form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 4.5rem;
+  }
+  .contact form .accept {
+    grid-column: span 2;
+  }
+  .contact form .item {
+    margin-bottom: 0;
+  }
+  .contact form .item:nth-child(1) div:last-child input {
+    margin-bottom: 0;
+  }
+  .contact form .item:nth-child(2) {
+    overflow: hidden;
+  }
+  .contact form .item:nth-child(2) textarea {
+    height: 100%;
   }
   .skill-tech .row {
     -webkit-column-count: 3;

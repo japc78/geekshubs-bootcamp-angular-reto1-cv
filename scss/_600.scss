@@ -3,10 +3,9 @@
     ul {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
 
-      li {
-        width: 50%;
-      }
+      li { width: 50%;}
     }
   }
 
